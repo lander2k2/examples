@@ -74,6 +74,7 @@ authorizers:
   remote_json:
     enabled: true
     config:
+      forward_response_headers_to_upstream: []
       remote: http://keto-api:4456/check
       payload: |
         {
